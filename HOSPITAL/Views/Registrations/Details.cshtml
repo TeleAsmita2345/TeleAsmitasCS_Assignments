@@ -1,0 +1,50 @@
+﻿@model HOSPITAL.Models.Registration
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Registration</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deasease)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deasease)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.doctor_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.doctor_id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.patientname }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
